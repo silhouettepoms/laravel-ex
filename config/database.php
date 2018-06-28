@@ -54,8 +54,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            //'host' => env(strtoupper(env('DB_SERVICE_NAME', 'MYSQL')).'_SERVICE_HOST', env('DB_HOST', 'localhost')),
-            'host' => 'dev-ocp-mysql.cluster.net',
+            'host' => env(strtoupper(env('DB_SERVICE_NAME', 'MYSQL')).'_SERVICE_HOST', env('DB_HOST', 'localhost')),
             'port' => env(strtoupper(env('DB_SERVICE_NAME', 'MYSQL')).'_SERVICE_PORT', env('DB_PORT', '3306')),
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
